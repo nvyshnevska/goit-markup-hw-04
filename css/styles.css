@@ -397,11 +397,11 @@ letter-spacing: 0.03em;
 .clients-item {
   flex-basis: calc((100%-150px)/6);
   margin-left: 30px;
+  width: 170px;
+  height: 92px;
 }
 
 .clients-link {
-  padding-top: 16px;
-  padding-bottom: 16px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -428,15 +428,17 @@ letter-spacing: 0.03em;
 .footer {
   max-width: 1600px;
   margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--background-black-color);
 }
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .address-container {
-  padding: 60px 0;
   margin-right: 70px;
 }
 
@@ -475,8 +477,8 @@ letter-spacing: 0.03em;
 }
 
 .social-container {
-  padding-top: 72px;
-  padding-bottom: 100px;
+  padding-top: ;
+  padding-bottom: ;
 }
 
 .social-subtitle {
@@ -510,31 +512,6 @@ letter-spacing: 0.03em;
 
 .projects-item:not(:last-child) {
   margin-right: 8px;
-}
-
-.examples-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-}
-
-.examples-title {
-  margin-bottom: 4px;
-}
-
-.examples-item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin: 15px;
-
-  border-bottom: 1px solid #EEEEEE;
-}
-
-.examples-item:hover {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
-}
-
-.examples-container {
-  padding: 20px 24px;
 }
 
 .visually-hidden {
@@ -571,10 +548,42 @@ letter-spacing: 0.03em;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.examples-title {
+  margin-bottom: 4px;
+}
+
+.examples-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin: 15px;
+
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.examples-link {
+  display: block;
+}
+
+.examples-link:hover,
+.examples-link:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.examples-container {
+  padding: 20px 24px;
+}
+
 .examples-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  color: var(--primary-text-color);
 }
 
 .examples-text {
